@@ -20,7 +20,7 @@ def view(task_list):
         task_list.append(task_name)
     print("updated task list:", task_list)
 # Remove any item from the list
-def remove(task_list):
+def delete(task_list):
     task_name = input("Enter the task name to remove: ")
     if task_name in task_list:
         task_list.remove(task_name)
@@ -33,5 +33,5 @@ def remove(task_list):
 
 add(task_list)
 view(task_list)
-remove(task_list)
+delete(task_list)
 
